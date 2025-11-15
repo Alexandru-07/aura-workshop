@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyAccount | Atelier Aura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body class="page-shell page-account">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Atelier Aura</a>
+        <nav class="nav-links">
+          <a class="nav-link" href="index.html">Shop</a>
+          <a class="nav-link cart-link" href="mycart.html"
+            >MyCart
+            <span class="cart-count" data-cart-count>0</span>
+          </a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link is-active" href="myaccount.html">MyAccount</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="profile-hero">
+        <div class="avatar">LB</div>
+        <div>
+          <p class="tag">Member since 2019</p>
+          <h2>Livia Branea</h2>
+          <p>
+            Designer, curator, and founder of Atelier Aura. Managing every drop,
+            shipment, and studio visit.
+          </p>
+        </div>
+        <div style="margin-left: auto; text-align: right">
+          <p class="tag">Aura+ Tier</p>
+          <strong>Reward points: 4,560</strong>
+          <p>Next unlock at 5,000 pts</p>
+        </div>
+      </div>
+
+      <div class="account-grid">
+        <article class="card">
+          <h3>Shipping address</h3>
+          <p>Livia Branea</p>
+          <p>
+            your location
+            <button class="btn btn-ghost" type="button">Edit address</button>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Billing &amp; payments</h3>
+          <p>Primary card ending &bull;&bull;18, expires 07/27</p>
+          <p>Backup: Revolut EUR wallet</p>
+          <button class="btn btn-ghost" type="button">
+            Manage payment methods
+          </button>
+        </article>
+        <article class="card">
+          <h3>Upcoming drops</h3>
+          <ul class="timeline">
+            <li><strong>April 12:</strong> Solar Bloom Jewelry Set</li>
+            <li><strong>April 28:</strong> Terra Clay capsule</li>
+            <li><strong>May 05:</strong> Linen picnic edit</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Recent orders</h3>
+          <ul class="timeline">
+            <li>#AURA-4093 &middot; Delivered &middot; 2 items</li>
+            <li>#AURA-4031 &middot; Delivered &middot; 4 items</li>
+            <li>#AURA-3984 &middot; Pick-up ready &middot; 1 item</li>
+          </ul>
+          <button class="btn btn-primary" type="button">View all orders</button>
+        </article>
+        <article class="card">
+          <h3>Wishlist</h3>
+          <p>Saved 8 products from the current collection.</p>
+          <button class="btn btn-ghost" type="button">Open favorites</button>
+        </article>
+        <article class="card">
+          <h3>Security</h3>
+          <p>Two-factor authentication <strong>enabled</strong></p>
+          <p>Last sign-in: 2 hours ago via Web</p>
+          <button class="btn btn-ghost" type="button">Manage security</button>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small
+        >&copy; <span data-year></span> User. Account hub keeps everything in
+        sync.</small
+      >
+    </footer>
+
+    <script defer src="assets/js/storage.js"></script>
+    <script defer src="assets/js/site.js"></script>
+    <script defer src="assets/js/static.js"></script>
+  </body>
+</html>

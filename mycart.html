@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyCart | Atelier Aura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="page-shell page-cart">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Atelier Aura</a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Shop</a>
+        <a class="nav-link cart-link is-active" href="mycart.html">MyCart
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="myaccount.html">MyAccount</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="section-header">
+      <div>
+        <h2>My cart</h2>
+        <p>Everything you saved from the marketplace lives here.</p>
+      </div>
+      <a class="btn btn-ghost" href="index.html">Continue browsing</a>
+    </div>
+
+    <div class="cart-layout">
+      <section>
+        <div class="cart-list" data-cart-list></div>
+        <div class="empty-state" data-empty-state hidden>
+          <h3>Your cart is empty.</h3>
+          <p>Add handmade accessories from the main shop to see them listed here.</p>
+          <a class="btn btn-primary" href="index.html">Discover products</a>
+        </div>
+      </section>
+      <aside class="summary-card">
+        <h3>Order summary</h3>
+        <div class="summary-row">
+          <span>Items</span>
+          <strong data-summary-items>0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong data-summary-subtotal>$0.00</strong>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <strong data-summary-shipping>$0.00</strong>
+        </div>
+        <div class="summary-row summary-total">
+          <span>Total</span>
+          <span data-summary-total>$0.00</span>
+        </div>
+        <button class="btn btn-primary" data-checkout-btn>Secure checkout</button>
+        <button class="btn btn-ghost" data-clear-btn>Clear cart</button>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; <span data-year></span> Atelier Aura. Crafted checkout powered by kindness.</small>
+  </footer>
+
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/storage.js"></script>
+  <script defer src="assets/js/site.js"></script>
+  <script defer src="assets/js/cart.js"></script>
+</body>
+
+</html>

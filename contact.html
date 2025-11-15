@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Atelier Aura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body class="page-shell page-contact">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Atelier Aura</a>
+        <nav class="nav-links">
+          <a class="nav-link" href="index.html">Shop</a>
+          <a class="nav-link cart-link" href="mycart.html"
+            >MyCart
+            <span class="cart-count" data-cart-count>0</span>
+          </a>
+          <a class="nav-link is-active" href="contact.html">Contact</a>
+          <a class="nav-link" href="myaccount.html">MyAccount</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="section-header">
+        <div>
+          <h2>Say hi to Livia</h2>
+          <p>
+            I design, curate, and ship every parcel from my warm studio in
+            Cluj-Napoca.
+          </p>
+        </div>
+        <span class="tag">hello@atelieraura.com</span>
+      </div>
+
+      <div class="contact-grid">
+        <article class="card">
+          <h3>About me</h3>
+          <p>
+            I’m ..., the designer behind Atelier Aura. I build small-batch
+            accessories with organic fabrics, hand-cut metals, and experimental
+            dyes. When I am not weaving, I mentor local makers and host open
+            studio nights.
+          </p>
+          <ul class="contact-info">
+            <li><strong>Company:</strong> your location</li>
+            <li><strong>Phone:</strong> +40 757 ...</li>
+            <li><strong>Email:</strong> hello@example.com</li>
+            <li><strong>Hours:</strong> Tue – Sat, 10:00 – 18:00</li>
+          </ul>
+        </article>
+
+        <form
+          class="card contact-form"
+          action="mailto:hello@atelieraura.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <h3>Send me a note</h3>
+
+          <label>
+            <div class="contact-note-label">
+              <h4>Your name:</h4>
+              <input type="text" name="name" placeholder="Alex Doe" required />
+            </div>
+          </label>
+
+          <label>
+            <div class="contact-note-label">
+              <h4>Your email:</h4>
+              <input
+                type="email"
+                name="email"
+                placeholder="alex@email.com"
+                required
+              />
+            </div>
+          </label>
+
+          <label>
+            <div class="contact-note-label">
+              <h4>Message:</h4>
+              <textarea
+                id="contact_note_label_area"
+                name="message"
+                placeholder="Tell me what you are looking for..."
+                required
+              ></textarea>
+            </div>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Send email</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small
+        >&copy; <span data-year></span> Atelier Aura. Inbox always open for
+        collaborations.</small
+      >
+    </footer>
+
+    <script defer src="assets/js/storage.js"></script>
+    <script defer src="assets/js/site.js"></script>
+    <script defer src="assets/js/static.js"></script>
+  </body>
+</html>

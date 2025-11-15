@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier Aura | Handmade Accessories Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="page-shell page-home">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Atelier Aura</a>
+      <nav class="nav-links">
+        <a class="nav-link is-active" href="index.html">Shop</a>
+        <a class="nav-link cart-link" href="mycart.html">MyCart
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="myaccount.html">MyAccount</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <article class="hero-card">
+        <p class="tag">Warm. Simple. Futuristic.</p>
+        <h1>Handmade accessories made for slow living homes.</h1>
+        <p>
+          Discover over fifty artisan-crafted goods sourced from indie creators:
+          future-forward designs grounded in natural textures and glowing colors.
+        </p>
+        <button class="hero-cta" data-scroll-target="#catalog">Explore the Market</button>
+      </article>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <strong>54 makers</strong>
+          <span>Bringing unique stories &amp; small-batch drops.</span>
+        </div>
+        <div class="stat-card">
+          <strong>Hand-picked</strong>
+          <span>Each listing is curated for warmth + ease.</span>
+        </div>
+        <div class="stat-card">
+          <strong>Plastic-free</strong>
+          <span>Mindful packaging ready for gifting.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section collections" id="collections">
+      <div class="section-header">
+        <h2>Curated sections</h2>
+        <p>Shop by vibe and discover layered textures for every corner.</p>
+      </div>
+      <div class="collections-grid">
+        <article class="card">
+          <p class="tag">Glow</p>
+          <h3>Warm light stories</h3>
+          <p>Lanterns, candles, and planters that cast soft peachy light across your rooms.</p>
+        </article>
+        <article class="card">
+          <p class="tag">Tactile</p>
+          <h3>Textile playground</h3>
+          <p>Macrame, woven throws, and dyed scarves ready to layer onto sofas or shoulders.</p>
+        </article>
+        <article class="card">
+          <p class="tag">Wearable</p>
+          <h3>Everyday jewelry</h3>
+          <p>Statement earrings, bracelets, and slings that dress up your out-the-door ritual.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="catalog">
+      <div class="section-header">
+        <div>
+          <h2>Marketplace catalog</h2>
+          <p>Browse our lineup of one-of-a-kind pieces.</p>
+        </div>
+        <div class="search-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor"
+              d="M15.5 14h-.79l-.28-.27a6 6 0 1 0-.71.71l.27.28v.79L20 20.49 21.49 19zM10 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" />
+          </svg>
+          <input type="search" placeholder="Search accessories..." aria-label="Search accessories"
+            data-search-input />
+        </div>
+      </div>
+      <div class="pill-group" data-filter-group></div>
+      <div class="product-grid" data-product-grid></div>
+    </section>
+
+    <section class="section story" id="story">
+      <div class="section-header">
+        <h2>Why Atelier Aura</h2>
+        <p>Design-first layouts, transparent sourcing, warm tech.</p>
+      </div>
+      <div class="story-grid">
+        <article class="card">
+          <h3>Futuristic ease</h3>
+          <p>Clean layouts, guided shopping cues, and real-time stock indicators keep browsing calm.</p>
+        </article>
+        <article class="card">
+          <h3>Community-forward</h3>
+          <p>Every purchase sends 80% directly to makers plus optional tips for their next drop.</p>
+        </article>
+        <article class="card">
+          <h3>Ready to gift</h3>
+          <p>We bundle instant cards, handwritten notes, and plastic-free wraps with each cart.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; <span data-year></span> Atelier Aura. Built with heart-crafted design systems.</small>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>Added to MyCart</div>
+
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/storage.js"></script>
+  <script defer src="assets/js/site.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</body>
+
+</html>
